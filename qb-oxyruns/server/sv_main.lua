@@ -6,7 +6,7 @@ local GetCopCount = function()
     local amount = 0
     local players = QBCore.Functions.GetQBPlayers()
     for _, Player in pairs(players) do
-        if Player.PlayerData.job.name == "police" and Player.PlayerData.job.duty then
+        if Player.PlayerData.job.name == "police" and Player.PlayerData.job.onduty then
             amount = amount + 1
         end
     end
